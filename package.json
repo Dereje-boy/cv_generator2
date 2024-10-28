@@ -1,0 +1,24 @@
+{
+  "name": "cv_generator2",
+  "version": "1.0.0",
+  "description": "This project will be responsible for holding backend version of cv generator. Unlike the previous cv generator which is fullstack but this is only backend and the database is also changed from mongo to sqlite for the sake of simplicity and price reduction",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dereje-boy/cv_generator2.git"
+  },
+  "author": "dereje-boy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dereje-boy/cv_generator2/issues"
+  },
+  "homepage": "https://github.com/Dereje-boy/cv_generator2#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
