@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon app.js "
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dereje-boy/cv_generator2.git"
@@ -17,10 +18,12 @@
   },
   "homepage": "https://github.com/Dereje-boy/cv_generator2#readme",
   "dependencies": {
-    "@prisma/client": "^5.21.1",
     "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "express": "^4.21.1",
+    "mysql2": "^3.11.4",
     "nodemon": "^3.1.7",
-    "prisma": "^5.21.1"
+    "sequelize": "^6.37.5"
   }
 }
