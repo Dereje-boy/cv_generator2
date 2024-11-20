@@ -1,5 +1,9 @@
 import express from 'express'
-import {userModel} from '../smodels/usermodel.js';
+
+import userModel from '../smodels/usermodel.js';
+
+import emailChecker from '../checker/emailChecker.js';
+import passwordChecker from '../checker/passwordChecker.js';
 
 const userRoute = express.Router();
 
@@ -12,7 +16,7 @@ userRoute.get('/', (req, res)=>{
 userRoute.post('/', (req, res)=>{
 	res.send("data recieved success");
 	console.log(`body :`)
-	console.log(req.body)
+	console.log(emailChecker(req.body.email));
 	console.log(`cookies `);
 	console.log(req.cookies);
 });

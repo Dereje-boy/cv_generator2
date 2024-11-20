@@ -1,4 +1,4 @@
-export const userModel = (sequelize, DataTypes)=>{
+const userModel = (sequelize, DataTypes)=>{
 
 const UserModel_v = sequelize.define(
   'usermodel',
@@ -35,3 +35,6 @@ const UserModel_v = sequelize.define(
   return UserModel_v;
 
 };
+
+
+export default userModel;

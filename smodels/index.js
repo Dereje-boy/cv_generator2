@@ -1,7 +1,7 @@
 import {Sequelize, DataTypes } from 'sequelize';
 
 //models
-import {userModel} from './usermodel.js';
+import userModel from './usermodel.js';
 import {personalinformationModel} from './personalinformationmodel.js';
 import {educationModel} from './educationmodel.js';
 import {experienceModel} from './experiencemodel.js';
