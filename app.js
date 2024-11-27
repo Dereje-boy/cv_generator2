@@ -23,7 +23,7 @@ app.use(cors({
 console.log("connecting to mysql remote address");
 
 //authenticate
-//authenticateDB();
+authenticateDB();
 
 app.get('/', (req, res)=>{
     res.send("Welcome home");
@@ -34,10 +34,11 @@ app.post("/", (req,res)=>{
     res.json(req.body);
 });
 
-app.use(router);
+// app.use(router);
+//using mount path
+app.use( router)
 
 app.listen(3000, ()=>console.log("Server started successfully on 3000 port "));
-
 
 async function syncDB(){
 	try{
@@ -56,7 +57,7 @@ async function authenticateDB(){
 	  console.log('Connection has been established successfully.');
 
 	  //if authenticated success, sync
-	  await syncDB();
+	  // await syncDB();
  
 	  //insert new record
 	  //await createNewRecord('derejeg36@gmail.com', 'mypassword');
