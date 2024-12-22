@@ -57,6 +57,8 @@ userRoute.post('/login', async (req, res)=>{
 		if(signresult.success == true){
 			const token = signresult.otherdata.token;
 			result.otherdata.token = token;
+			result.otherdata.email = email;
+
 			return res.json(result);
 		}else{
 			//unable to generate token
